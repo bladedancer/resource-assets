@@ -1,0 +1,11 @@
+apiVersion: v1alpha1
+group: catalog
+kind: Category
+name: demo
+tags:
+  - demo
+spec:
+  description: |
+    # Not sure
+    ## if this works
+    - testing

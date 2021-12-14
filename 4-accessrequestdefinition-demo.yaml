@@ -1,0 +1,12 @@
+apiVersion: v1alpha1
+group: management
+kind: AccessRequestDefinition
+name: demo
+metadata:
+  scope:
+    kind: Environment
+    name: staging
+tags:
+  - music
+spec:
+  schema: {}

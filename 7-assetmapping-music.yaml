@@ -1,0 +1,21 @@
+apiVersion: v1alpha1
+group: management
+kind: AssetMapping
+name: music
+metadata:
+  scope:
+    kind: Environment
+    name: staging
+tags:
+  - music
+spec:
+  assetMappingTemplate: staging
+  inputs:
+    apiService: music
+    apiServiceRevision: music
+    apiServiceInstance: music
+    accessRequestDefinition: demo
+    stage: demo
+    asset: musicalinstruments
+    categories:
+    - demo

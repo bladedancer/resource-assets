@@ -1,0 +1,13 @@
+apiVersion: v1alpha1
+group: management
+kind: ReleaseTag
+name: music
+metadata:
+  scope:
+    kind: Asset
+    name: musicalinstruments
+tags:
+  - music
+spec:
+  description: First release of the musical instruments asset.
+  releaseType: major
