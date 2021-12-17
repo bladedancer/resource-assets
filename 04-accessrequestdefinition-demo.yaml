@@ -10,3 +10,4 @@ tags:
   - music
 spec:
   schema: {}
+  provisioning: manual # manual | agent

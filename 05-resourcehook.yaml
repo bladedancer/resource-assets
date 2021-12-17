@@ -1,0 +1,84 @@
+apiVersion: v1alpha1
+group: management
+kind: Integration
+name: assetprovisioning
+title: Asset Provisioning Integration
+tags:
+  - asset
+spec:
+    description: These are the integrations for supporting asset provisioning.
+---
+apiVersion: v1alpha1
+group: management
+kind: Secret
+name: provisioningapikey
+title: Credential for asset provisioning service. 
+tags:
+  - asset
+metadata:
+  scope:
+    kind: Integration
+    name: assetprovisioning
+spec:
+    data:
+      apikey: Basic UGFzc3dvcmQxMjM6 #Password123
+---
+apiVersion: v1alpha1
+group: management
+kind: Webhook
+name: provisioningwebhook
+tags:
+  - music
+metadata:
+  scope:
+    kind: Integration
+    name: assetprovisioning
+spec:
+  enabled: true
+  auth: 
+    secret:
+      name: provisioningapikey
+      key: apikey
+  url: "https://bladedancer.asuscomm.com/api/hook"
+---
+apiVersion: v1alpha1
+group: management
+kind: Webhook
+name: sanitycheck
+tags:
+  - music
+metadata:
+  scope:
+    kind: Integration
+    name: assetprovisioning
+spec:
+  enabled: true
+  auth: 
+    secret:
+      name: provisioningapikey
+      key: apikey
+  url: https://webhook.site/1b06938c-d983-425c-88d8-ddc7981ee80d
+---
+apiVersion: v1alpha1
+group: management
+kind: ResourceHook
+name: provisioninglistener
+tags:
+  - music
+metadata:
+  scope:
+    kind: Integration
+    name: assetprovisioning
+spec:
+  triggers:
+    - group: catalog
+      scope:
+        kind: Asset
+        name: "*"
+      kind: AssetRequest
+      name: "*"
+      type: 
+        - updated
+  webhooks:
+    - provisioningwebhook
+    - sanitycheck

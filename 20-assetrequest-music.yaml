@@ -1,0 +1,17 @@
+apiVersion: v1alpha1
+group: management
+kind: AssetRequest
+name: bob
+metadata:
+  scope:
+    kind: Asset
+    name: musicalinstruments
+tags:
+  - music
+spec:
+  assetResource: musicalinstruments-1.0.0/staging-music
+  assetRequestDefinition: musicalinstruments-1.0.0/staging-demo
+  assetRelease: musicalinstruments-1.0.0
+  data:
+    name: Bob Upndowner12
+    email: bob@example.com
