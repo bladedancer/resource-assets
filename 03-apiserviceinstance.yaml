@@ -1,0 +1,20 @@
+group: management
+apiVersion: v1alpha1
+kind: APIServiceInstance
+name: musicalinstruments-ars
+title: Musical Instruments on ARS
+metadata:
+  scope:
+    kind: Environment
+    name: resource-assets-env
+spec:
+  apiServiceRevision: musicalinstruments
+  accessRequestDefinition: acc-req-def
+  credentialRequestDefinitions:
+    - "password"
+  endpoint:
+    - host: musicalinstruments.axway.com
+      protocol: https
+      port: 443
+      routing:
+        basePath: /music/v2

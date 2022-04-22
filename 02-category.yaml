@@ -1,0 +1,7 @@
+group: catalog
+apiVersion: v1
+kind: Category
+name: resource-assets-demo
+title: Resource Asset Demo
+spec:
+  description: Resources associated with the demo.

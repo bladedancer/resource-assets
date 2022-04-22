@@ -1,0 +1,21 @@
+group: catalog
+apiVersion: v1
+kind: Document
+name: description
+title: Description
+metadata:
+  scope:
+    kind: Product
+    name: musicalinstruments
+spec:
+  description: This describes the usage of this product.
+  sections:
+    - title: API
+      description: The API.
+      articles:
+        - kind: AssetResource
+          title: API Def
+          name: musicalinstruments-1.0.0/resource-assets-env-musicalinstruments
+        - kind: Resource
+          title: API Description
+          name: musicalinstruments-api-resource

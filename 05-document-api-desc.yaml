@@ -1,0 +1,17 @@
+group: catalog
+apiVersion: v1
+kind: Resource
+name: musicalinstruments-api-resource
+metadata:
+  scope:
+    kind: Product
+    name: musicalinstruments
+spec:
+  fileType: txt
+  contentType: text/plain
+  data:
+    type: text
+    content: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue et nisl eu ornare. Suspendisse vestibulum diam at metus maximus tincidunt. Nullam id risus volutpat, imperdiet turpis nec, condimentum velit. Donec hendrerit sodales nisl eu tempus. Nulla ut scelerisque justo. Aliquam tortor nibh, ullamcorper a orci sed, placerat dictum ipsum. Maecenas lacinia luctus mauris, quis pulvinar purus pharetra non. Nullam nec pulvinar odio. Etiam ut libero pretium, ullamcorper odio ac, vehicula magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean eleifend blandit gravida. Suspendisse potenti. Donec quis ullamcorper tortor.
+
+      Fusce sit amet purus sit amet ex sollicitudin ultrices quis non ante. Morbi quis velit orci. Nullam faucibus rutrum neque, quis vulputate tortor placerat nec. Nulla auctor augue et felis dapibus, vel vestibulum justo fermentum. Suspendisse mattis tortor eget laoreet volutpat. Proin pharetra vitae tortor quis condimentum. Phasellus lectus turpis, blandit id neque mollis, ornare scelerisque mi. Nulla facilisi. Suspendisse sodales magna risus, quis imperdiet nisi sagittis non. Suspendisse vulputate lacus vel erat dictum sodales. Cras mattis erat at eros molestie malesuada. Aenean vel tempor magna. Aliquam ultricies neque turpis.

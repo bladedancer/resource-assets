@@ -1,0 +1,16 @@
+group: catalog
+apiVersion: v1alpha1
+kind: AssetMapping
+name: musicalinstruments-mapping
+metadata:
+  scope:
+    kind: Asset
+    name: musicalinstruments
+spec:
+  inputs:
+    apiService: "management/resource-assets-env/musicalinstruments"
+    apiServiceRevision: "management/resource-assets-env/musicalinstruments"
+    apiServiceInstance: "management/resource-assets-env/musicalinstruments-ars"
+    categories:
+      - "resource-assets-demo"
+    stage: production

@@ -1,0 +1,10 @@
+group: management
+apiVersion: v1alpha1
+kind: AccessRequestDefinition
+name: acc-req-def
+metadata:
+  scope:
+    kind: Environment
+    name: resource-assets-env
+spec:
+  schema: {}

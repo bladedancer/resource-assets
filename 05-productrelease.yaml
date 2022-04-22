@@ -1,0 +1,10 @@
+group: catalog
+apiVersion: v1alpha1
+kind: ReleaseTag
+name: musicalinstruments-1.0.0
+metadata:
+  scope:
+    kind: Product 
+    name: musicalinstruments
+spec:
+  releaseType: major

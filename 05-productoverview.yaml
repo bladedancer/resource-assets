@@ -1,0 +1,12 @@
+group: catalog
+apiVersion: v1
+kind: ProductOverview
+name: musicalinstruments-overview
+metadata:
+  scope:
+    kind: Product
+    name: musicalinstruments
+spec:
+  documents:
+    - name: description
+  

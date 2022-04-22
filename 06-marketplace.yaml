@@ -1,0 +1,11 @@
+group: catalog
+apiVersion: v1alpha1
+kind: PublishedProduct
+name: musicalinstruments
+metadata:
+  scope:
+    kind: Marketplace
+    name: e2d551f8-f908-4364-a14b-c0381afb87b9
+spec:
+  product:
+    name: musicalinstruments

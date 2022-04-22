@@ -1,0 +1,19 @@
+group: catalog
+apiVersion: v1alpha1
+kind: ProductPlan
+name: freemium
+title: Fremimum Plan
+spec:
+  product: musicalinstruments
+  type: free
+  features:
+    - name: "Woodwinds"
+    - name: "Drums"
+  description: Fremimum plan for Musical Instruments.
+  subscription:
+    interval:
+      length: 1
+      type: months
+    approval: automatic
+    renewal: automatic
+state: active

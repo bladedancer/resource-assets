@@ -1,0 +1,8 @@
+group: catalog
+apiVersion: v1alpha1
+kind: Stage
+name: production
+title: Production
+spec:
+  description: The production stage.
+  

@@ -1,0 +1,8 @@
+group: catalog
+apiVersion: v1alpha1
+kind: ProductPlanUnit
+name: transactions
+title: Transactions
+spec:
+  description: The units that the product plan quoata counts.
+  
