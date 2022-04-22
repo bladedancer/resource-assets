@@ -29,12 +29,14 @@ axway central apply -f 05-productoverview.yaml
 axway central apply -f 05-productrelease.yaml
 echo "Wait for release to complete"
 sleep 20
+
+axway central apply -f 06-marketplace.yaml
+
+# FOR NOW THE PRODUCT HAS TO BE RELEASED BEFORE PLAN CAN BE ADDED...DUBIOUS.
 axway central apply -f 05-productplan.yaml
 axway central apply -f 05-productplanunit.yaml
 axway central apply -f 05-productplan-quota.yaml
 axway central apply -f 05-productplan-active.yaml
-
-axway central apply -f 06-marketplace.yaml
 
 echo "================================"
 echo "Done."
