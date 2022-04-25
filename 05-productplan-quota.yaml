@@ -10,7 +10,7 @@ spec:
   unit: transactions
   resources:
     - kind: AssetResource
-      name: musicalinstruments-1.0.0/resource-assets-env-musicalinstruments
+      name: musicalinstruments/resource-assets-env-musicalinstruments
   pricing:
     type: fixed
     interval: monthly
