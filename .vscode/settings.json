@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/bladedancer/apiserver-jsonschema/main/central.json": [
+            "/*",
+            "file:///home/gavin/github/resource-assets/01-env-accessrequestdefinition.yaml"
+        ]
+    }
+}

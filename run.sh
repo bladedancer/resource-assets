@@ -1,6 +1,6 @@
 #!/bin/bash
 
-axway auth login
+. ./env.sh
 
 axway central apply -f 01-env.yaml
 axway central apply -f 01-env-credentialrequestdefinition.yaml

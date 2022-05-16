@@ -1,6 +1,6 @@
 #!/bin/bash
 
-axway auth login
+. ./env.sh
 
 axway central delete publishedproduct musicalinstruments -s e2d551f8-f908-4364-a14b-c0381afb87b9
 axway central apply -f 99-clean-product-archive.yaml
