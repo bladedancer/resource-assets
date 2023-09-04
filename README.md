@@ -12,3 +12,6 @@ This repo is a manual walk through of the steps involved.
 - [04 - Assets](./04-asset.md)
 - [05 - Products](./05-product.md)
 - [06 - Marketplace](./06-marketplace.md)
+
+For example github action:
+[Action Central](https://github.com/bladedancer/action-central/blob/main/.github/workflows/resources.yml)
